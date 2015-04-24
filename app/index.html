@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>“农大肥业”杯2015-2016山东粮王大赛报名表</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="login-page">
+<div class="banner"><img src="images/topbanner.jpg" class="img-responsive" width="100%"></div>
+<div class="login-form" ms-controller="enroll">
+    <div class="login-content">
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <span>姓&nbsp;&nbsp;&nbsp;&nbsp;名：</span>
+                </div>
+                <input type="text" class="form-control" name="name" id="name" ms-duplex="name" autocomplete="off"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <span>地&nbsp;&nbsp;&nbsp;&nbsp;址：</span>
+                </div>
+                <input type="text" class="form-control" name="address" id="address" ms-duplex="address" autocomplete="off"/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <span>手&nbsp;&nbsp;&nbsp;&nbsp;机：</span>
+                </div>
+
+                <input type="text" class="form-control" name="mobile" id="mobile" ms-duplex="mobile" autocomplete="off"/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <span>去年种植玉米品种：</span>
+                </div>
+                <input type="text" class="form-control" name="ly_crop" id="ly_crop" ms-duplex="ly_crop" autocomplete="off"/>
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <span>去年玉米种植面积：</span>
+                </div>
+                <input type="text" class="form-control" name="ly_area" id="ly_area" ms-duplex="ly_area" placeholder="请输入亩数" autocomplete="off"/>
+            </div>
+        </div>
+
+        <div class="form-group" style="display: none">
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <span>去年亩产量：</span>
+                </div>
+                <input type="text" class="form-control" name="ly_prod" id="ly_prod" ms-duplex="ly_prod" placeholder="请输入亩产斤数" autocomplete="off"/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <span>今年计划种植品种：</span>
+                </div>
+                <input type="text" class="form-control" name="ty_crop" id="ty_crop" ms-duplex="ty_crop" autocomplete="off"/>
+            </div>
+        </div>
+        <div class="form-group" >
+            <div class="input-group"  >
+                <div class="input-group-addon">
+                    <span>今年计划种植面积：</span>
+                </div>
+                <input type="text" class="form-control" name="ty_area" id="ty_area" ms-duplex="ty_area" placeholder="请输入亩数" autocomplete="off"/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block btn-login" ms-click="submit">
+                <b>提&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;交</b>
+            </button>
+        </div>
+    </div>
+</div>
+</div>
+<div><img src="images/botBannerf.jpg" class="img-responsive" width="100%"></div>
+</body>
+<script src="js/avalon.mobile.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/model/settings.js"></script>
+<script src="js/model/popWindow.js"></script>
+<script src="js/model/main.js"></script>
+</html>

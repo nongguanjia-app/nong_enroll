@@ -1,0 +1,15 @@
+CREATE TABLE `enroll_form` (
+  `id` INT(32) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(32) NOT NULL,
+  `address` VARCHAR(255) NULL,
+  `mobile` VARCHAR(16) NOT NULL,
+  `ly_crop` VARCHAR(255) NULL,
+  `ly_area` INT(16) UNSIGNED NULL,
+  `ly_prod` INT(16) UNSIGNED NULL,
+  `ty_crop` VARCHAR(255) NULL,
+  `ty_area` INT(16) UNSIGNED NULL,
+  `create_time` DATETIME NULL,
+  `last_time` DATETIME NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC),
+  UNIQUE INDEX `mobile_UNIQUE` (`mobile` ASC)) DEFAULT CHARSET=utf8;
