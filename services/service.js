@@ -72,7 +72,7 @@ Service.get_excel = function(req, res) {
     var data = [["编号","姓名","地址","手机号","去年种植玉米品种","去年种植玉米面积","去年亩产量","今年计划种植品种","今年计划种植面积","创建时间","最后更新时间"]];
 
     //根据数据库记录生成data
-    query('SELECT * from enroll_form', function(err, r){
+    query('SELECT * from enroll_form order by last_time asc', function(err, r){
         if(err) {
             res.json({status: -1, msg: 'msg_server_error: ' + err});
         } else {

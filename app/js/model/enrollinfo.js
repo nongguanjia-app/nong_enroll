@@ -13,7 +13,8 @@ var vm = avalon.define({
 avalon.ready(function() {
     var result = location.search.match(new RegExp("mobile=([^\&]+)", "i"));
     if (result == null || result.length < 1) {
-        vm.mobile = "";
+        //vm.mobile = "";
+        window.location.href = "checkenroll.html";
     } else {
         vm.mobile = result[1];
     }
